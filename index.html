@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Amazonproject</title>
 </head>
 <body  >
-    <div class="grid shadow sm:grid-cols-2 justify-between items-center p-2 w-full h-full bg-white pl-4 pr-4">
-        <div class="">
-             
-            <ul class="flex gap-4">
-                <h2 class="font-bold text-xl">amazon</h2>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Today's Deaks</a></li>
-                <li><a href="#">Gift Card</a></li>
-                <li><a href="#">Registry & Gifting</a></li>
+    <div class="grid shadow sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 justify-between items-center p-2 w-full h-full bg-white pl-4 pr-4">
+        <div class="justify-center ">
+            <h2 class="font-bold text-xl">amazon</h2>
+        </div>
+        <div class="justify-self-center">
+            <ul class="flex gap-4 text-lg ">     
+                <li><a href="#" class="hover:text-blue-600">All</a></li>
+                <li><a href="#" class="hover:text-blue-600">Today's Deaks</a></li>
+                <li><a href="#" class="hover:text-blue-600">Gift Card</a></li>
+                <li><a href="#" class="hover:text-blue-600">Registry & Gifting</a></li>
             </ul>
         </div>
         
@@ -40,7 +40,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full h-full bg-red-100 mt-2 grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+    <!-- <div class="w-full h-full bg-red-100 mt-2 grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
         <div class="flex gap-2 items-center m-2">
             <div class="">
                 <img class="h-12 w-12 rounded-3xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNhTZJTtkR6b-ADMhmzPvVwaLuLdz273wvQ&s" alt="">
@@ -77,24 +77,22 @@
             <p>Recommend for you</p>
             </div>
         </div>
-        
-          
-        </div>
+        </div> -->
         <h2 class="font-bold text-lg justify-center items-center text-center m-4">Shop by gotegories</h2>
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-8 m-4 p-2  gap-3 items-center justify-center">
-        <div class=" bg-white w-48 h-full shadow transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  ">
+        <div class=" bg-white w-48 h-full shadow transition delay-120 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  ">
             <img class="h-64 w-48 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDL9bu3XjyHOv-1qMCbdMn5p-QVRMrPAX2w&s" alt="">
             <h2 class="font-bold  text-center justify-center">Beauty pick</h2>
         </div>
-        <div class=" bg-white w-48 h-full shadow transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+        <div class=" bg-white w-48 h-full shadow transition delay-120 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
             <img class="h-48 w-48" src="data:image/jpeg;base64,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" alt="">
             <h2 class="font-bold  text-center justify-center mt-16">Computer accessories</h2>
         </div>
-        <div class=" bg-white w-48 h-full shadow transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+        <div class=" bg-white w-48 h-full shadow transition delay-120 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
             <img class="h-64 w-48" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDL9bu3XjyHOv-1qMCbdMn5p-QVRMrPAX2w&s" alt="">
             <h2 class="font-bold  text-center justify-center">Beauty pick</h2>
         </div>
-        <div class=" bg-white w-48 h-full shadow transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+        <div class=" bg-white w-48 h-full shadow transition delay-120 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
             <img class="h-64 w-48" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDL9bu3XjyHOv-1qMCbdMn5p-QVRMrPAX2w&s" alt="">
             <h2 class="font-bold  text-center justify-center">Beauty pick</h2>
         </div>
@@ -205,7 +203,22 @@
         </div>
     </div>
     <!-- javascritp -->
-    <script>
-    </script>
+    <!-- <script>
+        menu=document.getElementById('menu')
+        let menulist={
+            Men,
+            Women,
+            kids,
+            Shoes,
+            Jeans,
+            Shirts,
+            Shorts,
+        }
+        const menuloop=""
+        for(let i=0;i<length.menulist;i++){
+            menuloop+=menulist[i]+"<br>"
+        }
+        document.getElementById("menu").innerHTML=menuloop;
+    </script> -->
 </body>
 </html>
