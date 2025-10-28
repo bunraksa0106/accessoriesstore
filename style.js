@@ -14,12 +14,12 @@ window.closeModalM = function () {
 // head.style.marginTop="0";
 
 const head = document.getElementById('head');
-      window.addEventListener('scroll', function () {
-        if (window.pageYOffset >= 0&&head) {
-          head.style.position = 'fixed';
+    //   window.addEventListener('scroll', function () {
+    //     if (window.pageYOffset >= 0&&head) {
+    //       head.style.position = 'fixed';
           head.style.top = '0';
-          head.style.width = '100%';
-          head.style.height='20vh';
+    //       head.style.width = '100%';
+    //       head.style.height='20vh';
 
-        }
-    });
+    //     }
+    // });
