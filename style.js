@@ -7,7 +7,6 @@ window.closeModalM = function () {
     if (!viewAll) return;
         viewAll.classList.add('hidden');
 };
-
 const head = document.getElementById('head');
   head.style.top = '0';
 const btn = document.getElementById('btn');
