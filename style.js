@@ -19,7 +19,7 @@ const head = document.getElementById('head');
           head.style.position = 'fixed';
           head.style.top = '0';
           head.style.width = '100%';
-          head.style.height='18vh';
-          
+          head.style.height='20vh';
+
         }
     });
