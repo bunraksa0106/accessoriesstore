@@ -16,3 +16,11 @@ const btn = document.getElementById('btn');
   btn.addEventListener("onmuseout", () => {
     return ;
   });
+const btnadd=document.getElementById("btnadd");
+window.ButtonaddOpen=function(){
+  btnadd.classList.remove('hidden');
+  btnadd.classList.add('fixed');
+}  
+ window.ButtonaddClose = function () {
+      btnadd.classList.add('hidden');
+    }

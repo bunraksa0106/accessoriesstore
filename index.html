@@ -29,8 +29,8 @@
         </div>
     </div>
     <div class="bg-white mt-8 h-full w-full grid xl:grid-cols-2 shadow mt-2 sm:grid-cols-1 lg:grid-cols-2">
-        <div class="text-center items-center justify-center">
-            <h2 class="font-bold text-2xl mt-8">SHOP COMPUTERS <br> & ACCESSORIES</h2>
+        <div class="text-center  justify-center">
+            <h2 class="font-bold items-center text-2xl mt-8">SHOP COMPUTERS <br> & ACCESSORIES</h2>
             <p>Shop laptops and desktop , monitors PC <br> accessories and more items in website </p>
             <button class="h-8 w-32 border border-gray-700 rounded-lg mt-2">View More</button>
         </div>
@@ -140,7 +140,7 @@
             </div>
             <div class="flex justify-between p-4 items-center">
                 <p class="font-bold text-lg p-3">$150.99</p>
-                <button class="border  w-32 h-8 bg-blue-700 text-white rounded-lg">add cart</button>
+                <button onclick="ButtonaddOpen()"  class="border  w-32 h-8 bg-blue-700 text-white rounded-lg">add cart</button>
             </div>
         </div>
         <div class="h-96 w-64 bg-gray-100 rounded-lg mt-2 ">
@@ -488,10 +488,61 @@
             </ul>
         </div>
      </div>
-     <!-- form -->
-      <div class="hidden w-64 h-96 border-gray-700 border rounded-md">
+     <!-- form add to cart-->
+     <form id="btnadd" class="hidden bg-white p-6 rounded-xl shadow-md w-80 space-y-4 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <h2 class="text-xl font-semibold text-center text-gray-700">🛍️ Add to Cart</h2>
 
-      </div>
+    <!-- Product Name -->
+    <div>
+      <label class="block text-gray-600 mb-1" for="product">Product Name</label>
+      <input
+        type="text"
+        id="product"
+        placeholder="Enter product name"
+        class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+    </div>
+
+    <!-- Quantity -->
+    <div>
+      <label class="block text-gray-600 mb-1" for="quantity">Quantity</label>
+      <input
+        type="number"
+        id="quantity"
+        min="1"
+        value="1"
+        class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+    </div>
+
+    <!-- Price -->
+    <div>
+      <label class="block text-gray-600 mb-1" for="price">Price ($)</label>
+      <input
+        type="text"
+        id="price"
+        placeholder="Enter price"
+        class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+    </div>
+
+    <!-- Add to Cart Button -->
+    <button
+      type="submit"
+      class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg shadow-md transition duration-200"
+    >
+      Add to Cart
+    </button>
+
+    <!-- Close Button -->
+    <button
+      type="button"
+      onclick="ButtonaddClose()"
+      class="w-full bg-gray-400 hover:bg-gray-500 text-white font-semibold py-2 rounded-lg transition duration-200"
+    >
+    
+    </button>
+  </form>
     <script src="style.js"></script>
 </body>
 </html>
