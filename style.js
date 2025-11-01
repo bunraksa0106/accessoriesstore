@@ -23,4 +23,4 @@ window.ButtonaddOpen=function(){
 }  
  window.ButtonaddClose = function () {
       btnadd.classList.add('hidden');
-    }
+}
