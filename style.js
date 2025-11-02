@@ -20,7 +20,17 @@ const btnadd=document.getElementById("btnadd");
 window.ButtonaddOpen=function(){
   btnadd.classList.remove('hidden');
   btnadd.classList.add('fixed');
-}  
- window.ButtonaddClose = function () {
+};
+window.ButtonaddClose = function () {
       btnadd.classList.add('hidden');
-}
+};
+const jepor=document.getElementById("jepor");
+window.porOpen=function(){
+  jepor.classList.remove('hidden');
+  jepor.classList.add('fixed');
+};
+window.porClose = function () {
+  jepor.classList.add('hidden');
+};
+
+
